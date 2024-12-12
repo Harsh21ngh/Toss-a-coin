@@ -1,0 +1,78 @@
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container */
+  .container {
+    margin-top: 50px;
+  }
+  
+  /* Coin Styling */
+  .coin {
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #ffffff;
+    font-size: 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .coin.head {
+    background-image: url('https://coins.silvercoinstoday.com/wp-content/uploads/2010/10/America-the-Beautiful-Silver-Coin-Obverse.jpg');
+  }
+  
+  .coin.tail {
+    background-image: url('https://onlinecoin.club/images/coins/United_States/597bb7f2-889a-4288-93e3-cc8f9c7a7f6b.jpg');
+  }
+  
+  /* Flip Animation */
+  .coin.flip {
+    animation: flip 1.5s ease-in-out;
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(360deg);
+    }
+    100% {
+      transform: rotateY(720deg);
+    }
+  }
+  
+  /* Output message styling */
+  .output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Button Styling */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
